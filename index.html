@@ -4,37 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cybersecurity Roadmap</title>
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
 
 <div class="app-container">
+    <!-- SIDEBAR -->
     <aside class="sidebar">
         <div class="sidebar-header">
-            <h2>Progress</h2>
+            <h2><i class="fas fa-chart-pie"></i> Progress</h2>
             <div id="progress-summary">Loading...</div>
         </div>
         <div id="stats-container"></div>
     </aside>
 
+    <!-- MAIN CONTENT -->
     <main class="main-content">
         <header class="top-bar">
             <div class="title-section">
-                <h1>Cybersecurity Roadmap</h1>
+                <h1><i class="fas fa-shield-alt"></i> Cybersecurity Roadmap</h1>
                 <p>Track your TryHackMe journey</p>
             </div>
             
-            <button id="theme-toggle" class="theme-btn">
-                <span class="mode-text">Switch Mode</span>
+            <!-- Icon Toggle Switch -->
+            <button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark Mode">
+                <i class="fas fa-moon"></i>
             </button>
         </header>
 
         <div id="dynamic-content" class="content-area">
-            </div>
+            <!-- Rooms will load here -->
+        </div>
 
+        <!-- FOOTER -->
         <footer class="credits-footer">
-            <p>Curated by <a href="https://github.com/Hunterdii" target="_blank">Hunterdii</a></p>
+            <p>
+                Credits to <a href="https://github.com/Hunterdii" target="_blank"><i class="fab fa-github"></i> Hunterdii</a> 
+                | Source: <a href="https://github.com/Hunterdii/tryhackme-free-rooms" target="_blank">TryHackMe-Roadmap</a>
+            </p>
         </footer>
     </main>
 </div>
