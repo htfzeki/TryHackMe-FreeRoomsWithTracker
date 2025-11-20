@@ -1,34 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TryHackMe Roadmap Tracker</title>
-    
+    <title>Cybersecurity Roadmap</title>
     <link rel="stylesheet" href="style.css">
-    
     <script src="script.js" defer></script>
 </head>
 <body>
 
-<div class="container">
+<div class="app-container">
     <aside class="sidebar">
         <div class="sidebar-header">
-            <h2>📊 Roadmap Progress</h2>
-            <small style="color:#666">Click a category to jump</small>
+            <h2>Progress</h2>
+            <div id="progress-summary">Loading...</div>
         </div>
         <div id="stats-container"></div>
     </aside>
 
-    <main class="content">
-        <div class="header-box">
-            <h1>🚀 TryHackMe Roadmap [2025]</h1>
-            <p>A curated, community-driven roadmap to master Cybersecurity.</p>
-        </div>
+    <main class="main-content">
+        <header class="top-bar">
+            <div class="title-section">
+                <h1>Cybersecurity Roadmap</h1>
+                <p>Track your TryHackMe journey</p>
+            </div>
+            
+            <button id="theme-toggle" class="theme-btn">
+                <span class="mode-text">Switch Mode</span>
+            </button>
+        </header>
 
-        <div id="dynamic-content">
-            <p style="text-align:center; color:#888;">Loading rooms...</p>
-        </div>
+        <div id="dynamic-content" class="content-area">
+            </div>
+
+        <footer class="credits-footer">
+            <p>Curated by <a href="https://github.com/Hunterdii" target="_blank">Hunterdii</a></p>
+        </footer>
     </main>
 </div>
 
