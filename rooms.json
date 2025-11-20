@@ -21,4 +21,20 @@
     {
         "category": "Introduction to Defensive Security",
         "rooms": [
-            { "id": "def-digitalforensics", "title": "Intro to Digital Forensics", "url": "
+            { "id": "def-digitalforensics", "title": "Intro to Digital Forensics", "url": "https://tryhackme.com/room/introdigitalforensics", "type": "🎁", "walkthrough": "https://www.youtube.com/watch?v=iLhSP1WD7Po" },
+            { "id": "def-secops", "title": "Security Operations", "url": "https://tryhackme.com/room/securityoperations", "type": "💸", "walkthrough": "https://www.youtube.com/watch?v=f9KcD11KT1U" },
+            { "id": "def-soc", "title": "SOC Fundamentals", "url": "https://tryhackme.com/room/socfundamentals", "type": "🎁", "walkthrough": "https://www.youtube.com/watch?v=MtVGmF-jACI" },
+            { "id": "def-forensicsfund", "title": "Digital Forensics Fundamentals", "url": "https://tryhackme.com/room/digitalforensicsfundamentals", "type": "💸", "walkthrough": "https://www.youtube.com/watch?v=EN6xeZ2oVFA" },
+            { "id": "def-incident", "title": "Incident Response Fundamentals", "url": "https://tryhackme.com/room/incidentresponsefundamentals", "type": "💸", "walkthrough": "https://www.youtube.com/watch?v=fcZ7_-BZBqM" },
+            { "id": "def-logs", "title": "Logs Fundamentals", "url": "https://tryhackme.com/room/logsfundamentals", "type": "💸", "walkthrough": "https://www.youtube.com/watch?v=d8PQxdrysIA" }
+        ]
+    },
+    {
+        "category": "Introduction to Offensive Security",
+        "rooms": [
+            { "id": "off-web", "title": "Web Application Security", "url": "https://tryhackme.com/room/introwebapplicationsecurity", "type": "🎁", "walkthrough": "https://www.youtube.com/watch?v=9YAisJofq3s" },
+            { "id": "off-os", "title": "Operating System Security", "url": "https://tryhackme.com/room/operatingsystemsecurity", "type": "💸", "walkthrough": "https://www.youtube.com/watch?v=6svk59F6aIA" },
+            { "id": "off-network", "title": "Network Security", "url": "https://tryhackme.com/room/intronetworksecurity", "type": "💸", "walkthrough": "https://www.youtube.com/watch?v=adzPWT1yJG4" }
+        ]
+    }
+]
