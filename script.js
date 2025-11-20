@@ -1,8 +1,38 @@
 document.addEventListener('DOMContentLoaded', () => {
     initTheme();
-    initModal(); // Initialize Modal
+    initModal(); 
+    initMobileSidebar(); // Initialize Hamburger Logic
     fetchRooms();
 });
+
+/* --- MOBILE SIDEBAR LOGIC --- */
+function initMobileSidebar() {
+    const menuBtn = document.getElementById('menu-btn');
+    const closeBtn = document.getElementById('close-sidebar');
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('sidebar-overlay');
+
+    function toggleMenu() {
+        sidebar.classList.toggle('active');
+        overlay.classList.toggle('active');
+    }
+
+    function closeMenu() {
+        sidebar.classList.remove('active');
+        overlay.classList.remove('active');
+    }
+
+    if (menuBtn) menuBtn.addEventListener('click', toggleMenu);
+    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+    if (overlay) overlay.addEventListener('click', closeMenu);
+    
+    // Close menu when clicking a nav item (Mobile UX)
+    document.getElementById('stats-container').addEventListener('click', (e) => {
+        if (window.innerWidth <= 768 && e.target.closest('.stat-item')) {
+            closeMenu();
+        }
+    });
+}
 
 /* --- MODAL LOGIC --- */
 function initModal() {
@@ -51,9 +81,9 @@ function initTheme() {
 
 function updateIcon(iconElement, theme) {
     if (theme === 'dark') {
-        iconElement.className = 'fas fa-sun'; // Show sun in dark mode
+        iconElement.className = 'fas fa-sun'; 
     } else {
-        iconElement.className = 'fas fa-moon'; // Show moon in light mode
+        iconElement.className = 'fas fa-moon'; 
     }
 }
 
@@ -77,7 +107,6 @@ function renderRoadmap(data) {
     const container = document.getElementById('dynamic-content');
     
     data.forEach(section => {
-        // Clean text logic
         const cleanTitle = section.category.replace(/([\u2700-\u27BF]|[\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2011-\u26FF]|\uD83E[\uDD10-\uDDFF])/g, '').trim();
         
         const sectionDiv = document.createElement('div');
@@ -93,7 +122,6 @@ function renderRoadmap(data) {
             const roomDiv = document.createElement('div');
             roomDiv.className = 'room-card';
             
-            // Badge Logic
             let badgeClass = 'free';
             let badgeText = 'FREE';
             if (room.type && room.type.includes('💸')) {
@@ -103,7 +131,6 @@ function renderRoadmap(data) {
 
             const cleanRoomTitle = room.title.replace(/([\u2700-\u27BF]|[\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2011-\u26FF]|\uD83E[\uDD10-\uDDFF])/g, '').trim();
 
-            // Button Generation (Embedded look)
             let linksHtml = `
                 <a href="${room.url}" target="_blank" class="action-btn primary" title="Go to Room">
                     <i class="fas fa-external-link-alt"></i> Room
@@ -186,7 +213,6 @@ function updateProgress() {
         row.onclick = () => {
             const target = document.getElementById(name.toLowerCase().replace(/[^a-z0-9]/g, '-'));
             if (target) {
-                // Smooth scroll with offset for header
                 const y = target.getBoundingClientRect().top + window.scrollY - 20;
                 window.scrollTo({top: y, behavior: 'smooth'});
             }
@@ -194,7 +220,6 @@ function updateProgress() {
         statsContainer.appendChild(row);
     }
     
-    // Update Header Summary
     const percent = Math.round((completed / total) * 100) || 0;
     document.getElementById('progress-summary').innerHTML = 
         `<strong>${percent}%</strong> Complete`;

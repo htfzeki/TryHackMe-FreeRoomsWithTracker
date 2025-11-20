@@ -14,10 +14,18 @@
 <body>
 
 <div class="app-container">
+    <!-- OVERLAY (For Mobile) -->
+    <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
     <!-- SIDEBAR -->
-    <aside class="sidebar">
+    <aside id="sidebar" class="sidebar">
         <div class="sidebar-header">
-            <h2><i class="fas fa-chart-pie"></i> Progress</h2>
+            <div class="header-content">
+                <h2><i class="fas fa-chart-pie"></i> Progress</h2>
+                <button id="close-sidebar" class="icon-btn mobile-only" aria-label="Close Menu">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
             <div id="progress-summary">Loading...</div>
         </div>
         <div id="stats-container"></div>
@@ -32,7 +40,12 @@
             </div>
             
             <!-- Header Controls -->
-            <div class="header-controls" style="display: flex; gap: 10px;">
+            <div class="header-controls">
+                <!-- Hamburger Menu (Mobile Only) -->
+                <button id="menu-btn" class="theme-btn mobile-only" aria-label="Open Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+
                 <button id="about-btn" class="theme-btn" aria-label="About Project">
                     <i class="fas fa-info-circle"></i>
                 </button>
@@ -50,7 +63,7 @@
         <footer class="credits-footer">
             <p>
                 Credits to <a href="https://github.com/Hunterdii" target="_blank"><i class="fab fa-github"></i> Hunterdii</a> 
-                | Source: <a href="https://github.com/Hunterdii/tryhackme-free-rooms" target="_blank">TryHackMe-Roadmap</a>
+                | Source: <a href="https://github.com/Hunterdii/tryhackme-free-rooms" target="_blank">TryHackMe Free Rooms Repo</a>
             </p>
         </footer>
     </main>
@@ -71,7 +84,7 @@
                 <p><strong>Resources & Credits:</strong></p>
                 <ul style="list-style: none; margin-top: 10px;">
                     <li style="margin-bottom: 5px;"><i class="fas fa-user-edit" style="width: 20px;"></i> Curated by: <a href="https://github.com/Hunterdii" target="_blank" style="color: var(--btn-accent); text-decoration: none; font-weight: 600;">Hunterdii</a></li>
-                    <li><i class="fas fa-code-branch" style="width: 20px;"></i> Source Repo: <a href="https://github.com/Hunterdii/tryhackme-free-rooms" target="_blank" style="color: var(--btn-accent); text-decoration: none; font-weight: 600;">TryHackMe-Roadmap</a></li>
+                    <li><i class="fas fa-code-branch" style="width: 20px;"></i> Source Repo: <a href="https://github.com/Hunterdii/tryhackme-free-rooms" target="_blank" style="color: var(--btn-accent); text-decoration: none; font-weight: 600;">tryhackme-free-rooms</a></li>
                 </ul>
             </div>
         </div>
