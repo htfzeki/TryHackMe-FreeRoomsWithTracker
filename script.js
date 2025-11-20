@@ -1,7 +1,32 @@
 document.addEventListener('DOMContentLoaded', () => {
     initTheme();
+    initModal(); // Initialize Modal
     fetchRooms();
 });
+
+/* --- MODAL LOGIC --- */
+function initModal() {
+    const modal = document.getElementById('about-modal');
+    const btn = document.getElementById('about-btn');
+    const close = document.querySelector('.close-btn');
+
+    // Open
+    btn.addEventListener('click', () => {
+        modal.style.display = "block";
+    });
+
+    // Close on X click
+    close.addEventListener('click', () => {
+        modal.style.display = "none";
+    });
+
+    // Close on outside click
+    window.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+}
 
 /* --- THEME LOGIC --- */
 function initTheme() {
