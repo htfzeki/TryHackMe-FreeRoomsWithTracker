@@ -1,0 +1,27 @@
+/* Add to your existing style.css */
+
+.links {
+    margin-left: auto; /* Pushes links to the far right */
+    display: flex;
+    gap: 10px;
+}
+
+.icon-link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: transform 0.2s;
+}
+
+.icon-link:hover {
+    transform: scale(1.2);
+}
+
+.room-type {
+    margin-right: 8px;
+}
+
+.header-box {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}

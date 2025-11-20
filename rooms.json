@@ -1,0 +1,24 @@
+[
+    {
+        "category": "Introduction to Cyber Security",
+        "rooms": [
+            { "id": "intro-offensive", "title": "Offensive Security Intro", "url": "https://tryhackme.com/room/offensivesecurityintrokK", "type": "🎁", "walkthrough": "https://www.youtube.com/watch?v=lBRHTtwsBeo" },
+            { "id": "intro-defensive", "title": "Defensive Security Intro", "url": "https://tryhackme.com/room/defensivesecurityintro", "type": "🎁", "walkthrough": "https://www.youtube.com/watch?v=3fG3HpEnM2A" },
+            { "id": "intro-careers", "title": "Careers in Cyber", "url": "https://tryhackme.com/room/careersincyber", "type": "🎁", "walkthrough": "https://www.youtube.com/watch?v=9sMDzMIp-98" },
+            { "id": "intro-principles", "title": "Security Principles", "url": "https://tryhackme.com/room/securityprinciples", "type": "🎁", "walkthrough": "https://www.youtube.com/watch?v=Quje0r194dM" },
+            { "id": "intro-training", "title": "Training Impact on Teams", "url": "https://tryhackme.com/room/training", "type": "🎁", "walkthrough": "https://www.youtube.com/watch?v=tu5WC04PhAE" },
+            { "id": "intro-starting", "title": "Starting Out In Cyber Sec", "url": "https://tryhackme.com/room/startingoutincybersec", "type": "🎁", "walkthrough": "https://www.youtube.com/watch?v=5g6D69bmQdw" },
+            { "id": "intro-welcome", "title": "Welcome", "url": "https://tryhackme.com/room/hello", "type": "🎁", "walkthrough": "" },
+            { "id": "intro-kali", "title": "Kali Machine", "url": "https://tryhackme.com/room/kali", "type": "💸", "walkthrough": "" },
+            { "id": "intro-howtoue", "title": "How to use TryHackMe", "url": "https://tryhackme.com/room/howtousetryhackme", "type": "🎁", "walkthrough": "" },
+            { "id": "intro-tutorial", "title": "Tutorial", "url": "https://tryhackme.com/room/tutorial", "type": "🎁", "walkthrough": "https://www.youtube.com/watch?v=ROO2pDPgja4" },
+            { "id": "intro-gettingstarted", "title": "Getting Started", "url": "https://tryhackme.com/room/gettingstarted", "type": "🎁", "walkthrough": "" },
+            { "id": "intro-learningpath", "title": "Learning Cyber Security", "url": "https://tryhackme.com/room/beginnerpathintro", "type": "🎁", "walkthrough": "" },
+            { "id": "intro-hacker", "title": "Become a Hacker", "url": "https://tryhackme.com/room/becomeahackeroa", "type": "🎁", "walkthrough": "https://www.youtube.com/watch?v=X2MQ-U6wlwY" },
+            { "id": "intro-openvpn", "title": "OpenVPN", "url": "https://tryhackme.com/room/openvpn", "type": "🎁", "walkthrough": "https://www.youtube.com/watch?v=Qm3SQE-dPdA" }
+        ]
+    },
+    {
+        "category": "Introduction to Defensive Security",
+        "rooms": [
+            { "id": "def-digitalforensics", "title": "Intro to Digital Forensics", "url": "
